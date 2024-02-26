@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class C02CssSelctor{
+public class HW_Buttons{
 
     static WebDriver driver;
 
@@ -44,6 +44,7 @@ public class C02CssSelctor{
         //2. Method: DeleteButtonsAndValidate()
         createButton(5);
         int NumberofButtenDeleted= DeleteButtonsAndValidate();
+
         System.out.println("NumberofButtenDeleted = " + NumberofButtenDeleted);
     }
 
