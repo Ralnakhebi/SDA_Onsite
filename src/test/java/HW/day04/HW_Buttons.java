@@ -39,8 +39,8 @@ public class HW_Buttons {
         //1. Method: createButtons(100)
         //2. Method: DeleteButtonsAndValidate(40)
 
-        createButton(5);
-        int NumberofButtenDeleted = DeleteButtonsAndValidate(3);
+        createButton(100);
+        int NumberofButtenDeleted = DeleteButtonsAndValidate(40);
 
         System.out.println("NumberofButtenDeleted = " + NumberofButtenDeleted);
 
