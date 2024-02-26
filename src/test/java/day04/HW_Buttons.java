@@ -7,14 +7,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.locators.RelativeLocator;
 
-import java.time.Duration;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
-public class HW_Buttons{
+public class HW_Buttons {
 
     static WebDriver driver;
 
