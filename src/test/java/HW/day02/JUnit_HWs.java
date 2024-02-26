@@ -1,4 +1,4 @@
-package HW;
+package HW.day02;
 
 import org.junit.*;
 import org.openqa.selenium.*;
