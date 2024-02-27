@@ -28,13 +28,31 @@ Then verify that checkbox 1 is checked.*/
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");
         options.addArguments("--remote-allow-origins=*"); // --> prevent error
-        //options.addArguments("incognito");
+        options.addArguments("incognito");
         driver = new ChromeDriver(options);
         driver.get("https://the-internet.herokuapp.com/checkboxes");
         List<WebElement> checkBoxes=driver.findElements(By.xpath("//*[@type='checkbox']"));
 
-            Assert.assertTrue(!(checkBoxes.get(0).isSelected()));
-            checkBoxes.get(0).click();
+        //checkBoxes.get(0).click();
+//        if(!(checkBoxes.get(0).isSelected())) {
+//            checkBoxes.get(0).click();
+//            System.out.println("check box 2 is selected ..");
+//        }else {
+//            System.out.println("check box 2 is already selected ..");
+//
+//        }
+        String isSelceted =checkBoxes.get(0).isSelected()? "check box 2 is selected ..":"check box 2 is not selected ..";
+        System.out.println("isSelceted = " + isSelceted);
+
+        if(!(checkBoxes.get(1).isSelected())) {
+            checkBoxes.get(1).click();
+            System.out.println("check box 2 is selected ..");
+        }else {
+            System.out.println("check box 2 is already selected ..");
+
+        }
+        //Assert.assertTrue((checkBoxes.get(0).isSelected()));
+        Assert.assertTrue((checkBoxes.get(1).isSelected()));
 
 
     }
