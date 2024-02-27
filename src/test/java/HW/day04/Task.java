@@ -9,6 +9,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.time.Duration;
 
@@ -19,8 +20,10 @@ public class Task {
 
     @BeforeClass
     public static void setUp(){
-
-        driver= new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("disable-popup-blocking");
+        options.addArguments("disable-popup-blocking");
+        driver= new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.get("https://automationexercise.com/");
 
@@ -29,7 +32,7 @@ public class Task {
 
     @AfterClass
     public static void tearDown(){
-        //driver.quit();
+        driver.quit();
     }
 
     @Test
@@ -56,6 +59,7 @@ public class Task {
         WebElement Submit= driver.findElement(By.xpath("//button[normalize-space()='Login']"));
 
         EmailField.sendKeys("sda@test.com");
+
         PassField.sendKeys("sdainclasstask");
         Submit.click();
 

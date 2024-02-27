@@ -57,12 +57,12 @@ public class HW_Buttons {
     public int DeleteButtonsAndValidate(int numberofButtontoDelete){
         int NumberofButtenDeleted=0;
 
-        List<WebElement> deleteButton =driver.findElements(By.xpath("//button[@class='added-manually']"));
+        List<WebElement> deleteButtons =driver.findElements(By.xpath("//button[@class='added-manually']"));
         try {
 
             for (int i=0;i<numberofButtontoDelete;i++){
-                if(deleteButton.get(i).isDisplayed()){
-                    deleteButton.get(i).click();
+                if(deleteButtons.get(i).isDisplayed()){
+                    deleteButtons.get(i).click();
                     NumberofButtenDeleted++;
                 }
             }}catch(org.openqa.selenium.StaleElementReferenceException ex) {
