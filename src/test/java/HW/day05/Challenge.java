@@ -49,16 +49,18 @@ public class Challenge {
 
             //WebElement makeDeleteButtonVisible = driver.findElement(RelativeLocator.with(By.tagName("li")).below(lastOne.get(2)));
             //with RelativeLocator
+            System.out.println("lastOne.get(last-1).getText() = " + lastOne.get(last - 1));
             lastOne.get(last-1).click();
-
             if(lastOne.get(last-1).isDisplayed()){
                 lastOne.get(last-1).click();
             }
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-            boolean result= lastOne.get(last-1).getAttribute("class").equals("completed");
 
+            System.out.println("lastOne.get(last-1).getText() = " + lastOne.get(last - 1).getAttribute("class"));
+
+            boolean result= lastOne.get(last-1).getAttribute("class").equals("completed");
+            //Assert.assertTrue(result);
             System.out.println(result);
-            //Assert.assertNull("The task wasn't deleted Successfully ..",result);
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
         }
