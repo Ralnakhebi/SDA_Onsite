@@ -24,7 +24,7 @@ public class Challenge {
     }
     @AfterClass
     public static void tearDown (){
-        //driver.quit();
+        driver.quit();
     }
     @Test
     public void test() throws InterruptedException {
@@ -81,7 +81,7 @@ public class Challenge {
 
         WebElement element =driver.findElement(By.xpath("//tr[@class='contactTableBodyRow'][1]"));
 
-        //deleteContactInfo(element);
+        deleteContactInfo(element);
     }
     public void deleteContactInfo(WebElement element) throws InterruptedException {
         String mainPage = driver.getCurrentUrl();
@@ -89,6 +89,9 @@ public class Challenge {
         WebElement deleteButton = driver.findElement(By.id("delete"));
 
         deleteButton.click();
+        System.out.println("Message : " + driver.switchTo().alert().getText());
+        driver.switchTo().alert().accept();
+        Thread.sleep(1000);
         Assert.assertEquals(driver.getCurrentUrl(),mainPage);
         Thread.sleep(1000);
 
