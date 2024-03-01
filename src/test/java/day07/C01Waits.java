@@ -84,7 +84,7 @@ public class C01Waits {
         driver.get("https://webdriveruniversity.com/Ajax-Loader/index.html");
         WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(5));
         //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        WebElement button =driver.findElement(By.id("button1"));
+        WebElement button = driver.findElement(By.id("button1"));
         //wait.until(ExpectedConditions.elementToBeClickable(By.id("button1")));
         wait.until(ExpectedConditions.visibilityOf(button));
 
