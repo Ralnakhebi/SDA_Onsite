@@ -13,7 +13,7 @@ public class PrimeNumbers {
         }
         for (int i = 2; i <= Math.sqrt(num); i++) {
             if (num % i == 0) {
-                return false; // If n is divisible by any number from 2 to sqrt(n), it's not prime
+                return false; // If num is divisible by any number from 2 to sqrt(n), it's not prime
             }
         }
         return true;
