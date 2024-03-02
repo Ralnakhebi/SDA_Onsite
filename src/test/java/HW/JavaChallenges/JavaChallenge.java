@@ -7,7 +7,6 @@ public class JavaChallenge {
         //Task1
         //1. Write a Java Program that reverses a string
         String string= "SDA Onsite";
-
         System.out.println("reversed String : " + reverseString(string));
 
         //Task2
@@ -15,12 +14,12 @@ public class JavaChallenge {
         int number = 2346;
         int number2= 456756;
 
-        System.out.println("First Number: "+number+"\nSecond Number: "+number2);
+        System.out.println("First Number: "+number+" Second Number: "+number2);
         int temp;
-        temp= number;
-        number=number2;
-        number2=temp;
-        System.out.println("After swapping\nFirst Number: "+number+"\nSecond Number: "+number2);
+        int[] swaped= swapTwoNumbers(number,number2);
+        number=swaped[0];
+        number2=swaped[1];
+        System.out.println("After swapping  First Number: "+number+" Second Number: "+number2);
 
         //Task3
         //3. Write a Java Program that prints fibonacci number due to given integer (11235811...)
@@ -50,6 +49,15 @@ public class JavaChallenge {
         }
 
         return reverse;
+    }
+
+    public static int[] swapTwoNumbers(int num1, int num2){
+        int temp;
+        temp= num1;
+        num1=num2;
+        num2=temp;
+        int[] swap ={num1, num2};
+        return swap;
     }
 
     public static int fibonscci(int num){
