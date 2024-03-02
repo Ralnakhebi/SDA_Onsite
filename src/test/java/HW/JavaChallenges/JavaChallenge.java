@@ -87,7 +87,7 @@ public class JavaChallenge {
 
     }
     public static int deferenceBetween(int[] arrayOfInt){
-        int max =arrayOfInt[0];//for starter  take a random num to be max
+        int max =arrayOfInt[0];//for starter take a random num to be max
         int min =arrayOfInt[0]; //for starter take a random num to be min
 
         for (int num : arrayOfInt){
