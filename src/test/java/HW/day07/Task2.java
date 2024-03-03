@@ -26,7 +26,7 @@ public class Task2 {
         @AfterClass
         public static void tearDown() {
 
-            driver.quit();
+            //driver.quit();
         }
 
         @Test

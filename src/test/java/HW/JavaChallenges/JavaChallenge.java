@@ -91,7 +91,7 @@ public class JavaChallenge {
         int min =arrayOfInt[0]; //for starter take a random num to be min
 
         for (int num : arrayOfInt){
-            if (max<num){
+            if(max<num){
                 max=num;
             }if(min>num){
                 min=num;
