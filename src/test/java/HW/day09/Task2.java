@@ -19,6 +19,5 @@ public class Task2 extends TestBase {
                 .pause(5)
                 .dragAndDropBy(scroller,-100,0)
                 .perform();
-
     }
 }
