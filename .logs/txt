@@ -1,0 +1,36 @@
+2024-03-11 13:54:16 TRACE C03Log4j_UseProperties:40 - This is a trace message
+2024-03-11 13:54:16 INFO  C03Log4j_UseProperties:44 - Selecting kilograms
+2024-03-11 13:54:17 INFO  C03Log4j_UseProperties:50 - Selecting height in feet3′
+2024-03-11 13:54:17 INFO  C03Log4j_UseProperties:56 - Selecting height in inchs2′
+2024-03-11 13:54:17 INFO  C03Log4j_UseProperties:63 - Clicking on calculate
+2024-03-11 13:54:17 INFO  C03Log4j_UseProperties:66 - SIUnit is
+2024-03-11 13:54:17 INFO  C03Log4j_UseProperties:70 - USUnit is
+2024-03-11 13:54:17 INFO  C03Log4j_UseProperties:73 - UKUnit is
+2024-03-11 13:54:17 DEBUG C03Log4j_UseProperties:75 - This is a debug message
+2024-03-11 14:01:59 TRACE C03Log4j_UseProperties:40 - This is a trace message
+2024-03-11 14:01:59 INFO  C03Log4j_UseProperties:44 - Selecting kilograms
+2024-03-11 14:02:00 INFO  C03Log4j_UseProperties:50 - Selecting height in feet3′
+2024-03-11 14:02:00 INFO  C03Log4j_UseProperties:56 - Selecting height in inchs2′
+2024-03-11 14:02:01 INFO  C03Log4j_UseProperties:63 - Clicking on calculate
+2024-03-11 14:02:01 INFO  C03Log4j_UseProperties:66 - SIUnit is
+2024-03-11 14:02:01 INFO  C03Log4j_UseProperties:70 - USUnit is
+2024-03-11 14:02:01 INFO  C03Log4j_UseProperties:73 - UKUnit is
+2024-03-11 14:02:01 DEBUG C03Log4j_UseProperties:75 - This is a debug message
+2024-03-11 14:02:59 TRACE C03Log4j_UseProperties:40 - This is a trace message
+2024-03-11 14:02:59 INFO  C03Log4j_UseProperties:44 - Selecting kilograms
+2024-03-11 14:03:00 INFO  C03Log4j_UseProperties:50 - Selecting height in feet3′
+2024-03-11 14:03:00 INFO  C03Log4j_UseProperties:56 - Selecting height in inchs2′
+2024-03-11 14:03:01 INFO  C03Log4j_UseProperties:63 - Clicking on calculate
+2024-03-11 14:03:02 INFO  C03Log4j_UseProperties:67 - SIUnit is
+2024-03-11 14:03:02 INFO  C03Log4j_UseProperties:71 - USUnit is
+2024-03-11 14:03:02 INFO  C03Log4j_UseProperties:74 - UKUnit is
+2024-03-11 14:03:02 DEBUG C03Log4j_UseProperties:76 - This is a debug message
+2024-03-11 14:03:47 TRACE C03Log4j_UseProperties:40 - This is a trace message
+2024-03-11 14:03:47 INFO  C03Log4j_UseProperties:44 - Selecting kilograms
+2024-03-11 14:03:48 INFO  C03Log4j_UseProperties:50 - Selecting height in feet3′
+2024-03-11 14:03:48 INFO  C03Log4j_UseProperties:56 - Selecting height in inchs2′
+2024-03-11 14:03:49 INFO  C03Log4j_UseProperties:63 - Clicking on calculate
+2024-03-11 14:03:50 INFO  C03Log4j_UseProperties:67 - SIUnit is
+2024-03-11 14:03:50 INFO  C03Log4j_UseProperties:72 - USUnit is
+2024-03-11 14:03:50 INFO  C03Log4j_UseProperties:75 - UKUnit is
+2024-03-11 14:03:50 DEBUG C03Log4j_UseProperties:77 - This is a debug message
